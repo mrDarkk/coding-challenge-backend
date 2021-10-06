@@ -4,16 +4,13 @@ const app = express()
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
+// These will be provided to you
 const BOUNCE_API_ENDPOINT = 'TODO';
+const BOUNCE_BEARER_TOKEN = 'TODO';
 
-// GET all
+// GET
 app.get('/users', function (req, res) {
     return res.status(200).send('[GET] - Get all users');
-});
-
-// GET :uid
-app.get('/users/:uid', function (req, res) {
-    return res.status(200).send('[GET] - Get user by uid');
 });
 
 // POST
@@ -24,11 +21,6 @@ app.post('/users', function (req, res) {
 // PUT :uid
 app.put('/users/:uid', function (req, res) {
     return res.status(200).send('[PUT] - Update specific user');
-});
-
-// DELETE all 
-app.delete('/users', function (req, res) {
-    return res.status(200).send('[DELETE] - Delete all users');
 });
 
 // DELETE :uid 
