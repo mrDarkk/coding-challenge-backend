@@ -7,6 +7,7 @@
 3. npm start
 
 you can run it locally or you can test this url as well.
+## Testing link
 Bankend live link for testing-
 ```http
 https://coding-challenge-backend1.herokuapp.com/users/
@@ -16,8 +17,16 @@ frontend live link for testing-
 https://coding-challenge-frontend1.herokuapp.com
 ```
 
-api doc: -
+## Github Repo 
+And, this is my github repo link
+```http
+1. https://github.com/mrDarkk/coding-challenge-backend
+2. https://github.com/mrDarkk/coding-challenge-frontend
+```
 
+
+
+api doc: -
 
 
 #### get all user 
