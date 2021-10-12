@@ -100,6 +100,6 @@ app.delete('/users/:uid', function (req, res) {
     //return res.status(200).send('[DELETE] - Delete user by uid');
 });
 
-app.listen(3000, function () {
-    console.log('Bounce coding-challenge-backend running on port 3000');
+app.listen(5000, function () {
+    console.log('Bounce coding-challenge-backend running on port 5000');
 })
