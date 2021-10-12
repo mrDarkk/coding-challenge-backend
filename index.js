@@ -99,7 +99,7 @@ app.delete('/users/:uid', function (req, res) {
     });
     //return res.status(200).send('[DELETE] - Delete user by uid');
 });
-
+const port = 5000
 app.listen(process.env.PORT || 5000, () => {
     console.log(`Bounce coding-challenge-backend running on ${port}`)
 })
