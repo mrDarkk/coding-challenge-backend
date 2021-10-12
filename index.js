@@ -73,7 +73,7 @@ app.put('/users/:uid', function (req, res) {
         }
     })
     .then(response => {
-        res.status(200).json({ message: "Yee! User Created" });
+        res.status(200).json({ message: "Yee! User Updated" });
     })
     .catch((err) => {
         res.status(500).json({ message: err });
@@ -100,6 +100,6 @@ app.delete('/users/:uid', function (req, res) {
     //return res.status(200).send('[DELETE] - Delete user by uid');
 });
 
-app.listen(5000, function () {
-    console.log('Bounce coding-challenge-backend running on port 5000');
+app.listen(process.env.PORT || 5000, () => {
+    console.log(`Bounce coding-challenge-backend running on ${port}`)
 })
