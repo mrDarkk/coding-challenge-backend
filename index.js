@@ -40,7 +40,8 @@ app.post('/users', function (req, res) {
             "email": req.body.email,
             "dateOfBirth": req.body.dateOfBirth,
             "gender": req.body.gender,
-            "surveys": req.body.surveys
+            "surveys": req.body.surveys,
+            "registeredAt": new Date().toISOString(),
         },
         headers: {
             'Authorization': `Bearer ${BOUNCE_BEARER_TOKEN}`
@@ -61,7 +62,7 @@ app.put('/users/:uid', function (req, res) {
         url: BOUNCE_API_ENDPOINT+"/"+id,
         method: "put",
         data: {
-            "registeredAt": new Date().toISOString(),
+            // "registeredAt": new Date().toISOString(),
             "name": req.body.name,
             "email": req.body.email,
             "dateOfBirth": req.body.dateOfBirth,
