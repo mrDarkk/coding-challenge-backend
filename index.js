@@ -38,7 +38,7 @@ app.post('/users', function (req, res) {
         data: {
             "name": req.body.name,
             "email": req.body.email,
-            "dateOfBirth": req.body.dateOfBirth,
+            "dateOfBirth": new Date(req.body.dateOfBirth).toISOString(),
             "gender": req.body.gender,
             "surveys": req.body.surveys,
             "registeredAt": new Date().toISOString(),
@@ -65,7 +65,7 @@ app.put('/users/:uid', function (req, res) {
             // "registeredAt": new Date().toISOString(),
             "name": req.body.name,
             "email": req.body.email,
-            "dateOfBirth": req.body.dateOfBirth,
+            "dateOfBirth": new Date(req.body.dateOfBirth).toISOString(),
             "gender": req.body.gender,
             "surveys": req.body.surveys
         },

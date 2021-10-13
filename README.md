@@ -4,7 +4,8 @@
 
 1. Go to the project folder
 2. npm install
-3. npm start
+3. npm run test
+4. npm start
 
 you can run it locally or you can test this url as well.
 ## Testing link
